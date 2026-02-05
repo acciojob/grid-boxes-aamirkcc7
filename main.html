@@ -3,30 +3,18 @@
 <head>
   <title>Grid Layout</title>
   <style>
-    body {
-      margin: 0;
-      background: #e5e5e5;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    .container {
-      width: 90%;
-      height: 90vh;
+    #grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(5, 1fr);
+      grid-template-rows: 124px 124px 124px 124px 124px;
+      grid-template-columns: 242.5px 242.5px 242.5px 242.5px;
       gap: 10px;
-      background: #e5e5e5;
     }
 
     .item {
-      background: #3b7f23;
+      background-color: #3b7f23;
       color: white;
-      font-size: 48px;
-      padding: 20px;
+      font-size: 40px;
+      padding: 15px;
     }
 
     /* Layout positioning */
@@ -71,12 +59,11 @@
     .item10 {
       grid-column: 2 / 5;
     }
-
   </style>
 </head>
 <body>
 
-  <div class="container">
+  <div id="grid">
     <div class="item item1">1</div>
     <div class="item item2">2</div>
     <div class="item item3">3</div>
