@@ -31,34 +31,31 @@
     .item3 {
       grid-column: 2 / 3;
     }
-
-    .item4 {
-      grid-column: 3 / 5;
+	   #grid > div:nth-child(1) {
+      grid-column: span 4;
     }
 
-    .item5 {
-      grid-column: 2 / 4;
+    /* 2 → span 4 rows */
+    #grid > div:nth-child(2) {
+      grid-row: span 4;
     }
 
-    .item6 {
-      grid-column: 4 / 5;
+    /* 4 → span 2 columns */
+    #grid > div:nth-child(4) {
+      grid-column: span 2;
     }
 
-    .item7 {
-      grid-column: 2 / 3;
+    /* 5 → span 2 columns */
+    #grid > div:nth-child(5) {
+      grid-column: span 2;
     }
 
-    .item8 {
-      grid-column: 3 / 4;
+    /* 10 → span 3 columns */
+    #grid > div:nth-child(10) {
+      grid-column: span 3;
     }
 
-    .item9 {
-      grid-column: 4 / 5;
-    }
-
-    .item10 {
-      grid-column: 2 / 5;
-    }
+   
   </style>
 </head>
 <body>
